@@ -1,0 +1,28 @@
+{
+  "name": "next-tech-news",
+  "version": "1.0.0",
+  "description": "tech news",
+  "main": "server.js",
+  "scripts": {
+    "dev": "next -p 9002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagisuke/next-tech-news.git"
+  },
+  "keywords": [
+    "nextjs"
+  ],
+  "author": "yagisuke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yagisuke/next-tech-news/issues"
+  },
+  "homepage": "https://github.com/yagisuke/next-tech-news#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}
