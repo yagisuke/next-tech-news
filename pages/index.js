@@ -2,6 +2,7 @@ import { Component } from 'react'
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
 
+import Layout from '../components/Layout'
 import StoryList from '../components/StoryList'
 
 class Index extends Component {
@@ -25,12 +26,11 @@ class Index extends Component {
     }
 
     return (
-      <div>
-        <h1>Tech NEWS</h1>
+      <Layout title="Tech NEWS" description="This is Tech NEWS">
         <div>
           <StoryList stories={stories} />
         </div>
-      </div>
+      </Layout>
     )
   }
 }
