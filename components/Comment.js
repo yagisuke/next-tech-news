@@ -32,7 +32,7 @@ const Comment = ({ comment }) => (
         word-wrap: break-word;
       }
       .comment-content :global(a) {
-        color: #f60;
+        color: #ffa700;
         text-decoration: underline;
       }
       .comment-content :global(pre) {

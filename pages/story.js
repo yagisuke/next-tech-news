@@ -28,7 +28,7 @@ class Story extends React.Component {
     }
 
     return (
-      <Layout title={story.title} backButton={true}>
+      <Layout title={story.title} description="This is Tech NEWS!!" backButton={true}>
         <main>
           <h1 className="story-title">
             <a href={story.url} target="_blank" rel="noopener noreferrer">
@@ -73,7 +73,7 @@ class Story extends React.Component {
             margin-right: 1em;
           }
           .story-details a {
-            color: #f60;
+            color: #ffa700;
           }
         `}</style>
       </Layout>

@@ -38,11 +38,11 @@ class Index extends Component {
         <footer>
           {page > 1 &&
             <Link href={`/?page=${page - 1}`}>
-              <a>Prev Page</a>
+              <a>Prev</a>
             </Link>
           }
           <Link href={`/?page=${page + 1}`}>
-            <a>Next Page</a>
+            <a>Next</a>
           </Link>
         </footer>
         <style jsx>{`
@@ -50,13 +50,14 @@ class Index extends Component {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1em 1em 80px;
+            padding: 1em;
           }
           footer a {
             display: inline-block;
             margin: 1em;
-            padding: 1em;
-            background-color: #0074c1;
+            padding: 1em 2em;
+            background-color: #265988;
+            border-radius: 4px;
             text-decoration: none;
             color: white;
           }
