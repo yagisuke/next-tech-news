@@ -21,15 +21,14 @@ const Layout = ({ children, title, description }) => (
       .container {
         max-width: 800px;
         margin: 0 auto;
-        background-color: #f6f6ef;
       }
       nav {
-        background-color: #f60;
+        background-color: #294E80;
         padding: 1em;
       }
       nav > * {
         display: inline-block;
-        color: black;
+        color: white;
       }
       nav a {
         text-decoration: none;

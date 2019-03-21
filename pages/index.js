@@ -56,10 +56,8 @@ class Index extends Component {
             display: inline-block;
             margin: 1em;
             padding: 1em;
-            background-color: black;
-            border-radius: 4px;
+            background-color: #0074c1;
             text-decoration: none;
-            font-weight: bold;
             color: white;
           }
         `}</style>

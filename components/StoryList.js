@@ -46,7 +46,7 @@ const StoryList = ({ stories }) => (
         margin-right: 1em;
       }
       .story-details a {
-        color: #6600ff;
+        color: #265988;
         text-decoration: none;
       }
     `}</style>
