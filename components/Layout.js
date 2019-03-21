@@ -11,7 +11,7 @@ const Layout = ({ children, title, description }) => (
       <nav>
         <Link href="/">
           <a>
-            <span className="main-title">Tech  NEWS</span>
+            <span className="main-title">{title}</span>
           </a>
         </Link>
       </nav>
