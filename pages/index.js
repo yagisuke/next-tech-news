@@ -22,6 +22,18 @@ class Index extends Component {
     return { stories, page }
   }
 
+  componentDidMount() {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('service worker registration successful', registration)
+      })
+      .catch(err => {
+        console.log('service worker registration failed', err.message)
+      })
+    }
+  }
+
   render() {
     const { stories, page } = this.props
     const title = page > 1 ? `Tech NEWS: Page${page}` : "Tech NEWS"
