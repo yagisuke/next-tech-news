@@ -3,7 +3,7 @@ const http = require('http')
 const url = require('url')
 const path = require('path')
 
-const port = process.env.PORT || 9002
+const port = parseInt(process.env.PORT, 10) || 9002
 const dev = process.env.NODE_ENV  !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
@@ -22,7 +22,8 @@ app.prepare().then(() => {
       handle(req, res, parsedUrl)
     }
   })
-  .listen(port, () => {
+  .listen(port, (err) => {
+    if (err) throw err
     console.log(`Listening on PORT ${port}`)
   })
 })

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "tech-news",
+  "builds": [
+    { "src": "server.js", "use": "@now/node-server" },
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "(.*)", "dest": "index.html" }
+  ]
+}

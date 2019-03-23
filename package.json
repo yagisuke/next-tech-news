@@ -4,9 +4,10 @@
   "description": "tech news",
   "main": "server.js",
   "scripts": {
+    "build": "next build",
     "dev": "NODE_ENV=develop node server.js",
-    "start": "NODE_ENV=production node server.js",
-    "build": "next build"
+    "now-build": "next build",
+    "now-start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
