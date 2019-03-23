@@ -5,9 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "next build",
-    "dev": "NODE_ENV=develop node server.js",
-    "now-build": "next build",
-    "now-start": "NODE_ENV=production node server.js"
+    "dev": "NODE_ENV=develop node server.js"
   },
   "repository": {
     "type": "git",
