@@ -3,9 +3,11 @@
   "name": "tech-news",
   "builds": [
     { "src": "server.js", "use": "@now/node-server" },
-    { "src": "next.config.js", "use": "@now/next" }
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "service-worker.js", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "(.*)", "dest": "index.html" }
+    { "src": "(.*)", "dest": "index.html" },
+    { "src": "^/service-worker.js", "headers": { "cache-control": "s-maxage=0" }, "dest": "/service-worker.js" }
   ]
 }
