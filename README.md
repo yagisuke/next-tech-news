@@ -11,3 +11,5 @@ SETTINGS:
 
 ### GENERATE icons
 URL: https://app-manifest.firebaseapp.com/
+  
+https://www.udemy.com/universal-react-with-nextjs-the-ultimate-guide
