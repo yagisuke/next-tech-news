@@ -14,7 +14,6 @@ class Index extends Component {
     try {
       page = Number(query.page) || 1
       const res = await fetch(`https://node-hnapi.herokuapp.com/news?page=${page}`)
-      // const res = await fetch('https://qiita.com/api/v2/items?query=tag:typescript')
       stories = await res.json()
     } catch (error) {
       console.log(error)
