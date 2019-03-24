@@ -1,4 +1,8 @@
 # next-tech-news
+
+## Screen
+<img src="./DOC/screen.png" width="250" />
+
 ## manifest.json
 ### CREATE manifest.json
 URL: https://tomitm.github.io/appmanifest/  
