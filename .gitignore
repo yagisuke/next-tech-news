@@ -1,2 +1,3 @@
 node_modules
 .next
+service-worker.js

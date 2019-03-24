@@ -4,8 +4,8 @@
   "description": "tech news",
   "main": "server.js",
   "scripts": {
-    "build": "next build",
-    "dev": "NODE_ENV=develop node server.js"
+    "dev": "NODE_ENV=develop node server.js",
+    "deploy": "next build && cp .next/service-worker.js service-worker.js && now --target production"
   },
   "repository": {
     "type": "git",
